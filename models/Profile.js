@@ -1,11 +1,11 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-//Create Schema
-const PrifileSchema = new Schema({
+// Create Schema
+const ProfileSchema = new Schema({
   user: {
     type: Schema.Types.ObjectId,
-    ref: "users"
+    ref: 'users'
   },
   handle: {
     type: String,
@@ -101,13 +101,13 @@ const PrifileSchema = new Schema({
     twitter: {
       type: String
     },
-    instagram: {
+    facebook: {
       type: String
     },
     linkedin: {
       type: String
     },
-    facebook: {
+    instagram: {
       type: String
     }
   },
@@ -117,4 +117,4 @@ const PrifileSchema = new Schema({
   }
 });
 
-module.exports = Profile = mongoose.model("profile", PrifileSchema);
+module.exports = Profile = mongoose.model('profile', ProfileSchema);
